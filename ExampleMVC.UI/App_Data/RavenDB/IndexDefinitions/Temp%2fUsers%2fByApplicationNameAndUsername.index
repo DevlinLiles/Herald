@@ -1,0 +1,11 @@
+{
+  "Map": "from doc in docs.Users\r\nselect new { Username = doc.Username, ApplicationName = doc.ApplicationName }",
+  "Reduce": null,
+  "TransformResults": null,
+  "IsMapReduce": false,
+  "IsCompiled": false,
+  "Stores": {},
+  "Indexes": {},
+  "SortOptions": {},
+  "Analyzers": {}
+}

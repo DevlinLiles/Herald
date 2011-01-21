@@ -1,0 +1,29 @@
+﻿@model ExampleMVC.Models.ListUsersModel
+@{
+    ViewBag.Title = "View All Users";
+}
+<h2>
+    View All Users</h2>
+<p>
+    This page lists all current users in the system, and you can click on any given
+    user to view their details.</p>
+
+<table>
+    <tr>
+        <th>
+            User Name
+        </th>
+        <th>
+            Last Login Date
+        </th>
+    </tr>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@user.UserName
+            </td>
+            <td>@user.LastLoginDate
+            </td>
+        </tr>
+    }
+</table>

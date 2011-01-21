@@ -1,0 +1,11 @@
+{
+  "Map": "from doc in docs.Roles\r\nselect new { Name = doc.Name }",
+  "Reduce": null,
+  "TransformResults": null,
+  "IsMapReduce": false,
+  "IsCompiled": false,
+  "Stores": {},
+  "Indexes": {},
+  "SortOptions": {},
+  "Analyzers": {}
+}
