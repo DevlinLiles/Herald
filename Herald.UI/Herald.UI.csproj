@@ -47,63 +47,11 @@
     <Reference Include="Castle.Windsor">
       <HintPath>..\lib\Castle.Windsor.2.5.2\dotNet40\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Esent.Interop, Version=1.6.0.0, Culture=neutral, PublicKeyToken=8dd49bbdae3f61af, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Esent.Interop.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory, Version=3.0.0.3800, Culture=neutral, PublicKeyToken=efe927acf176eea2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Castle.Windsor.2.5.2\dotNet40\loggingFacility\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Lucene.Net, Version=2.9.2.1, Culture=neutral, PublicKeyToken=02f879aa45933051, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Lucene.Net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Client.Embedded, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Client.Embedded.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Client.Lightweight, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Client.Lightweight.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Database.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Http, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Munin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=974fec519e29970d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Munin.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Storage.Esent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Storage.Esent.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Storage.Managed, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Storage.Managed.dll</HintPath>
-    </Reference>
-    <Reference Include="Spatial.Net, Version=2.9.1.2, Culture=neutral, PublicKeyToken=02f879aa45933051, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Spatial.Net.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages" />
     <Reference Include="System.Web.Helpers" />
@@ -178,17 +126,13 @@
     <Folder Include="Content\App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExampleMVC\ExampleMVC.csproj">
+    <ProjectReference Include="..\Herald\Herald.csproj">
       <Project>{9337199F-845B-4F64-B937-9E78B3BE11DD}</Project>
-      <Name>ExampleMVC</Name>
+      <Name>Herald</Name>
     </ProjectReference>
     <ProjectReference Include="..\JumpStart\JumpStart.csproj">
       <Project>{B3411806-CDF3-466A-A1EE-74BA3AFD9843}</Project>
       <Name>JumpStart</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RavenDBMembership\RavenDBMembership.csproj">
-      <Project>{07CCE5B6-9111-46DC-AAEC-00D80E19FE4A}</Project>
-      <Name>RavenDBMembership</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

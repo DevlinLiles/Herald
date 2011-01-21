@@ -37,47 +37,8 @@
     <Reference Include="Castle.Windsor">
       <HintPath>..\lib\Castle.Windsor.2.5.2\dotNet40\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Esent.Interop">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Esent.Interop.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Lucene.Net">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Lucene.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Abstractions">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Client.Embedded">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Client.Embedded.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Client.Lightweight">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Client.Lightweight.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Database">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Database.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Http">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Munin">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Munin.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Storage.Esent">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Storage.Esent.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Storage.Managed">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Raven.Storage.Managed.dll</HintPath>
-    </Reference>
-    <Reference Include="Spatial.Net">
-      <HintPath>..\lib\RavenDB-Build-206\EmbeddedClient\Spatial.Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -97,7 +58,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Installers\MembershipInstaller.cs" />
-    <Compile Include="Installers\RavenInstaller.cs" />
     <Compile Include="Models\ListUsersModel.cs" />
     <Compile Include="Services\AccountMembershipService.cs" />
     <Compile Include="Services\AccountRoleService.cs" />

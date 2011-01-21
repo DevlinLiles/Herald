@@ -81,7 +81,7 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExampleMVC\ExampleMVC.csproj">
+    <ProjectReference Include="..\Herald\Herald.csproj">
       <Project>{9337199F-845B-4F64-B937-9E78B3BE11DD}</Project>
       <Name>ExampleMVC</Name>
     </ProjectReference>

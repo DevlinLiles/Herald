@@ -57,10 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Argument.cs" />
-    <Compile Include="BaseController.cs" />
-    <Compile Include="ILoggingController.cs" />
-    <Compile Include="IsNot.cs" />
+    <Compile Include="Guards\Argument.cs" />
+    <Compile Include="Controller\BaseController.cs" />
+    <Compile Include="Controller\ILoggingController.cs" />
+    <Compile Include="Guards\IsNot.cs" />
     <Compile Include="JumpStartApplication.cs" />
     <Compile Include="WindsorControllerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

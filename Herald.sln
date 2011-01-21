@@ -1,17 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleMVC.UI", "ExampleMVC.UI\ExampleMVC.UI.csproj", "{9E3B7B11-2ABD-4B2B-9861-7159B07B1C8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald.UI", "Herald.UI\Herald.UI.csproj", "{9E3B7B11-2ABD-4B2B-9861-7159B07B1C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleMVC.Tests", "ExampleMVC.Tests\ExampleMVC.Tests.csproj", "{23B04B31-BA9F-464E-B25F-679887C7CE1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald.Tests", "Herald.Tests\Herald.Tests.csproj", "{23B04B31-BA9F-464E-B25F-679887C7CE1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpStart", "JumpStart\JumpStart.csproj", "{B3411806-CDF3-466A-A1EE-74BA3AFD9843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleMVC", "ExampleMVC\ExampleMVC.csproj", "{9337199F-845B-4F64-B937-9E78B3BE11DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenDBMembership", "RavenDBMembership\RavenDBMembership.csproj", "{07CCE5B6-9111-46DC-AAEC-00D80E19FE4A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenDBMembership.Tests", "RavenDBMembership.Tests\RavenDBMembership.Tests.csproj", "{FAC94456-EEE7-46D5-8356-532EAD56E8DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald", "Herald\Herald.csproj", "{9337199F-845B-4F64-B937-9E78B3BE11DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpStart.Tests", "JumpStart.Tests\JumpStart.Tests.csproj", "{4EEDBE9F-7F71-48AC-90B4-C28E7E328BBC}"
 EndProject
@@ -47,14 +43,6 @@ Global
 		{9337199F-845B-4F64-B937-9E78B3BE11DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9337199F-845B-4F64-B937-9E78B3BE11DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9337199F-845B-4F64-B937-9E78B3BE11DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07CCE5B6-9111-46DC-AAEC-00D80E19FE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07CCE5B6-9111-46DC-AAEC-00D80E19FE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07CCE5B6-9111-46DC-AAEC-00D80E19FE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07CCE5B6-9111-46DC-AAEC-00D80E19FE4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAC94456-EEE7-46D5-8356-532EAD56E8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAC94456-EEE7-46D5-8356-532EAD56E8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAC94456-EEE7-46D5-8356-532EAD56E8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAC94456-EEE7-46D5-8356-532EAD56E8DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4EEDBE9F-7F71-48AC-90B4-C28E7E328BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4EEDBE9F-7F71-48AC-90B4-C28E7E328BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EEDBE9F-7F71-48AC-90B4-C28E7E328BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
