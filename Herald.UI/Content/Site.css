@@ -6,11 +6,17 @@ to use a different color start by replacing all instances of
 body
 {
     background-color: #5c87b2;
-    font-size: 75%;
-    font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
     color: #696969;
+}
+
+input, select, textarea, th, td
+{
+    font-family: inherit;
+    font-size: 1em;
 }
 
 a:link
@@ -44,6 +50,7 @@ h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
     color: #000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1
@@ -104,6 +111,7 @@ page width. Or, you can specify an exact pixel width. */
     color: #fff;
     border: none;
     line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 32px !important;
 }
 
@@ -184,33 +192,43 @@ ul#menu li.selected a
 
 fieldset 
 {
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
 }
 
 legend 
 {
-    font-size:1.2em;
-    font-weight: bold;
-}
-
-textarea 
-{
-    min-height: 75px;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
 }
 
 input[type="text"] 
 {
-    width: 200px;
+    width: 20em;
     border: 1px solid #CCC;
 }
 
 input[type="password"] 
 {
-    width: 200px;
+    width: 20em;
     border: 1px solid #CCC;
 }
+
+textarea,
+textarea.input-validation-error
+{
+    width: 60em;
+    height: 20em;
+    border: 1px solid #CCC;
+}
+
 
 /* TABLE
 ----------------------------------------------------------*/
@@ -286,8 +304,6 @@ div#title
     text-decoration: none;
 }
 
-/* Styles for validation helpers
------------------------------------------------------------*/
 .field-validation-error
 {
     color: #ff0000;
@@ -315,18 +331,30 @@ div#title
     display: none;
 }
 
-/* Styles for editor and display helpers
-----------------------------------------------------------*/
 .display-label,
-.editor-label
-{
-    margin: 1em 0 0 0;
-}
-
+.editor-label,
 .display-field,
 .editor-field
 {
-    margin:0.5em 0 0 0;
+    margin: 0.5em 0;
+}
+
+.editor-field.wide input
+{
+    width: 60em;
+}
+
+
+fieldset.grid .display-label
+{
+    clear: both;
+    float: left;
+    width: 10em;
+}
+
+fieldset.grid .display-field
+{
+    float: left;
 }
 
 .text-box
@@ -342,4 +370,32 @@ div#title
 .tri-state
 {
     width: 6em;
+}
+
+.noborder
+{
+    border: 0;
+}
+
+
+
+/* Speaker profiles
+----------------------------------------------------------*/
+
+div.speaker-profile
+{
+    width: 75%;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+div.speaker-profile div.info
+{
+    float: left;
+    padding-right: 10px;
+}
+
+div.speaker-profile div.bio
+{
+    float: left;
 }

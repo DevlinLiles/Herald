@@ -2,7 +2,7 @@ using System;
 using System.Web.Security;
 using JumpStart;
 
-namespace ExampleMVC.Services
+namespace Herald.Services
 {
     public class AccountRoleService : IAccountRoleService
     {

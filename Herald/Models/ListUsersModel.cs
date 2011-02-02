@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Web.Security;
 
-namespace ExampleMVC.Models
+namespace Herald.Models
 {
     public class ListUsersModel
     {

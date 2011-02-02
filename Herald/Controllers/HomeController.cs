@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using JumpStart;
 
-namespace ExampleMVC.Controllers
+namespace Herald.Controllers
 {
     public class HomeController : BaseController
     {

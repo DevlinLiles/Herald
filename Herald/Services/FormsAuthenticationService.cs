@@ -1,7 +1,7 @@
 using System;
 using System.Web.Security;
 
-namespace ExampleMVC.Services
+namespace Herald.Services
 {
     public class FormsAuthenticationService : IFormsAuthenticationService
     {

@@ -314,11 +314,9 @@ Sys.Mvc.FormContext.prototype = {
         var errors = [];
         for (var i = 0; i < fields.length; i++) {
             var field = fields[i];
-            if (!field.elements[0].disabled) {
-                var thisErrors = field.validate(eventName);
-                if (thisErrors) {
-                    Array.addRange(errors, thisErrors);
-                }
+            var thisErrors = field.validate(eventName);
+            if (thisErrors) {
+                Array.addRange(errors, thisErrors);
             }
         }
         if (this.replaceValidationSummary) {
@@ -482,10 +480,7 @@ Sys.Mvc.FieldContext.prototype = {
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
             if (Sys.Mvc._validationUtil.elementSupportsEvent(element, 'onpropertychange')) {
-                var compatMode = document.documentMode;
-                if (compatMode && compatMode >= 8) {
-                    Sys.UI.DomEvent.addHandler(element, 'propertychange', this._onPropertyChangeHandler);
-                }
+                Sys.UI.DomEvent.addHandler(element, 'propertychange', this._onPropertyChangeHandler);
             }
             else {
                 Sys.UI.DomEvent.addHandler(element, 'input', this._onInputHandler);
@@ -580,8 +575,8 @@ Sys.Mvc.RangeValidator.create = function Sys_Mvc_RangeValidator$create(rule) {
     /// <param name="rule" type="Sys.Mvc.JsonValidationRule">
     /// </param>
     /// <returns type="Sys.Mvc.Validator"></returns>
-    var min = rule.ValidationParameters['min'];
-    var max = rule.ValidationParameters['max'];
+    var min = rule.ValidationParameters['minimum'];
+    var max = rule.ValidationParameters['maximum'];
     return Function.createDelegate(new Sys.Mvc.RangeValidator(min, max), new Sys.Mvc.RangeValidator(min, max).validate);
 }
 Sys.Mvc.RangeValidator.prototype = {
@@ -767,8 +762,8 @@ Sys.Mvc.StringLengthValidator.create = function Sys_Mvc_StringLengthValidator$cr
     /// <param name="rule" type="Sys.Mvc.JsonValidationRule">
     /// </param>
     /// <returns type="Sys.Mvc.Validator"></returns>
-    var minLength = (rule.ValidationParameters['min'] || 0);
-    var maxLength = (rule.ValidationParameters['max'] || Number.MAX_VALUE);
+    var minLength = rule.ValidationParameters['minimumLength'];
+    var maxLength = rule.ValidationParameters['maximumLength'];
     return Function.createDelegate(new Sys.Mvc.StringLengthValidator(minLength, maxLength), new Sys.Mvc.StringLengthValidator(minLength, maxLength).validate);
 }
 Sys.Mvc.StringLengthValidator.prototype = {
@@ -848,7 +843,7 @@ Sys.Mvc.ValidatorRegistry.getValidator = function Sys_Mvc_ValidatorRegistry$getV
 }
 Sys.Mvc.ValidatorRegistry._getDefaultValidators = function Sys_Mvc_ValidatorRegistry$_getDefaultValidators() {
     /// <returns type="Object"></returns>
-    return { required: Function.createDelegate(null, Sys.Mvc.RequiredValidator.create), length: Function.createDelegate(null, Sys.Mvc.StringLengthValidator.create), regex: Function.createDelegate(null, Sys.Mvc.RegularExpressionValidator.create), range: Function.createDelegate(null, Sys.Mvc.RangeValidator.create), number: Function.createDelegate(null, Sys.Mvc.NumberValidator.create) };
+    return { required: Function.createDelegate(null, Sys.Mvc.RequiredValidator.create), stringLength: Function.createDelegate(null, Sys.Mvc.StringLengthValidator.create), regularExpression: Function.createDelegate(null, Sys.Mvc.RegularExpressionValidator.create), range: Function.createDelegate(null, Sys.Mvc.RangeValidator.create), number: Function.createDelegate(null, Sys.Mvc.NumberValidator.create) };
 }
 
 

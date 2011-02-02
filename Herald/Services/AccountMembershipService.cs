@@ -4,7 +4,7 @@ using System.Web.Security;
 using JumpStart;
 using System.Collections.Generic;
 
-namespace ExampleMVC.Services
+namespace Herald.Services
 {
     public class AccountMembershipService : IMembershipService
     {

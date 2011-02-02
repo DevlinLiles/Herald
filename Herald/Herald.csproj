@@ -8,8 +8,8 @@
     <ProjectGuid>{9337199F-845B-4F64-B937-9E78B3BE11DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExampleMVC</RootNamespace>
-    <AssemblyName>ExampleMVC</AssemblyName>
+    <RootNamespace>Herald</RootNamespace>
+    <AssemblyName>Herald</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

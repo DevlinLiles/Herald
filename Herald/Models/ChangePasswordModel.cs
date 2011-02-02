@@ -1,11 +1,11 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
-using ExampleMVC.Validation;
 using System.Collections.Generic;
 using System.Web.Security;
+using Herald.Validation;
 
-namespace ExampleMVC.Models
+namespace Herald.Models
 {
     public class ChangePasswordModel
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Web.Security;
 
-namespace ExampleMVC.Validation
+namespace Herald.Validation
 {
     public static class AccountValidation
     {

@@ -2,7 +2,7 @@ using System;
 using System.Web.Security;
 using System.Collections.Generic;
 
-namespace ExampleMVC.Services
+namespace Herald.Services
 {
     // The FormsAuthentication type is sealed and contains static members, so it is difficult to
     // unit test code that calls its members. The interface and helper class below demonstrate

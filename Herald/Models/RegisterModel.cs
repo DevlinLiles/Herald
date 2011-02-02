@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
-using ExampleMVC.Validation;
+using Herald.Validation;
 
-namespace ExampleMVC.Models
+namespace Herald.Models
 {
     public class RegisterModel
     {

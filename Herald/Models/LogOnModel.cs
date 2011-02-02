@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ExampleMVC.Models
+namespace Herald.Models
 {
     public class LogOnModel
     {

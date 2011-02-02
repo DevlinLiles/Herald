@@ -1,6 +1,6 @@
 using System;
 
-namespace ExampleMVC.Services
+namespace Herald.Services
 {
     public interface IFormsAuthenticationService
     {

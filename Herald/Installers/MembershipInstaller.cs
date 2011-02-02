@@ -2,9 +2,9 @@ using System;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Castle.MicroKernel.SubSystems.Configuration;
-using ExampleMVC.Services;
+using Herald.Services;
 
-namespace ExampleMVC
+namespace Herald
 {
     public class MembershipInstaller : IWindsorInstaller
     {

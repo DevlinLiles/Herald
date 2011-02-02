@@ -2,12 +2,12 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using ExampleMVC.Models;
-using ExampleMVC.Services;
-using ExampleMVC.Validation;
+using Herald.Models;
+using Herald.Services;
+using Herald.Validation;
 using JumpStart;
 
-namespace ExampleMVC.Controllers
+namespace Herald.Controllers
 {
     public class AccountController : BaseController
     {

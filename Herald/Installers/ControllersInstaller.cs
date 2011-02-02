@@ -3,10 +3,10 @@ using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Castle.MicroKernel.SubSystems.Configuration;
 using System.Web.Mvc;
-using ExampleMVC.Controllers;
-using ExampleMVC.Services;
+using Herald.Services;
+using Herald.Controllers;
 
-namespace ExampleMVC
+namespace Herald
 {
     public class ControllersInstaller : IWindsorInstaller
     {
